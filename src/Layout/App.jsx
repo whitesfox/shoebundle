@@ -10,7 +10,7 @@ function App() {
       <ambientLight intensity={0.5} />
       <directionalLight intensity={0.3} />
       <Boxs />
-      <OrbitControls enableZoom={true} autoRotate autoRotateSpeed={4} />
+      <OrbitControls enableZoom={true} autoRotate autoRotateSpeed={1.5} />
     </Canvas>
   );
 }

@@ -8,11 +8,11 @@ import { useControls } from "leva";
 
 function Boxs() {
   const { range } = useControls({
-    range: { value: 100, min: 0, max: 1000, step: 50 },
+    range: { value: 500, min: 0, max: 1000, step: 50 },
   });
 
   return (
-    <Instances limit={1000} range={range}>
+    <Instances limit={1000} range={range} scale={0.3}>
       <capsuleGeometry />
       <meshStandardMaterial />
       {data.map((props, index) => (

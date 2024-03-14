@@ -9,8 +9,8 @@ export function Box({ ...props }) {
   const [hoverd, setHoverd] = useState(false);
   const num = new Vector3();
   useFrame((state, delta) => {
-    ref.current.rotation.x += 0.1;
-    ref.current.rotation.y += 0.1;
+    ref.current.rotation.x += 0.01;
+    ref.current.rotation.y += 0.01;
     easing.dampC(ref.current.color, hoverd ? "#EA2222" : "#D9F151", 0.7, delta);
     if (hoverd)
       easing.damp3(ref.current.scale, num.set(1.2, 1.2, 1.2), 0.4, delta);
